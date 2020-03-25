@@ -1,0 +1,259 @@
+JFDML JFormDesigner: "7.0.0.0.194" Java: "1.8.0_144" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp jPanel3::l:::x}"
+			"$verticalGroup": "par l {comp jPanel3::l:::x}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"title": "المستخدمين"
+			"cursor": new java.awt.Cursor( 0 )
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l:::p {seq l {comp jButton3:::p:32:p, space :::p, comp txt_classof_se:::p:247:p, space :::p, comp jLabel5:::p::p}, comp jScrollPane4::t:::x, comp jPanel2::t:::x}, space :::p, par l {seq {par l {comp jPanel1::l:::x, seq t {par l {comp txt_name:12:l:p:250:p, comp txt_phone:12:l:p:250:p}, space u:::p, par l {comp jLabel11:::p::p, comp jLabel8:::p::p}, space :p:11:p, par c {comp jLabel2::c:p::p, comp jLabel4::c:p::p}}}, space :::p}, seq t {comp jLabel1:::p::p, space s:::p, par c {comp jLabel14::c:p::p, comp jLabel13::c:p::p}, space :p:61:p}}}}"
+				"$verticalGroup": "par t {seq t {space :0:0:x, par c {comp jLabel1::c:p::p, seq c {comp jLabel13:::p::p, space :0:0:p, comp jLabel14:::p::p}}, space u:::p, par c {comp jLabel4::c:p::p, comp jLabel11:4:c:p::p, comp txt_name:6:c:p::p}, space s:::p, par c {comp jLabel2::c:p::p, comp jLabel8:4:c:p::p, comp txt_phone:6:c:p::p}, space s:::p, comp jPanel1:::p::p, space :::p}, seq {space :::p, par c {comp txt_classof_se:6:c:p::p, comp jButton3::c:p:32:p, comp jLabel5::c:p::p}, space u:::p, comp jScrollPane4:::::x, space u:::p, comp jPanel2:::p::p}}"
+			} ) {
+				name: "jPanel3"
+				"background": new java.awt.Color( 144, 202, 249, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel11"
+					"font": new java.awt.Font( "Times New Roman", 1, 18 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"text": "الإسم المورد"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_name"
+					"font": new java.awt.Font( "Times New Roman", 1, 18 )
+					"horizontalAlignment": 4
+					"border": new javax.swing.border.LineBorder( new java.awt.Color( 33, 150, 243, 255 ), 3, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "txt_nameActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel8"
+					"font": new java.awt.Font( "Times New Roman", 1, 18 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"text": "رقم التلفون"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_phone"
+					"font": new java.awt.Font( "Times New Roman", 1, 18 )
+					"horizontalAlignment": 4
+					"border": new javax.swing.border.LineBorder( new java.awt.Color( 33, 150, 243, 255 ), 3, false )
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "jScrollPane4"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "table1"
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"foreground": new java.awt.Color( 33, 150, 243, 255 )
+						"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector, new java.util.Vector, new java.util.Vector, new java.util.Vector )
+						"gridColor": new java.awt.Color( 255, 255, 255, 255 )
+						"preferredSize": new java.awt.Dimension( 50, 328 )
+						"selectionBackground": new java.awt.Color( 33, 150, 243, 255 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "table1MouseClicked", true ) )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_classof_se"
+					"font": new java.awt.Font( "Times New Roman", 1, 18 )
+					"horizontalAlignment": 4
+					"border": new javax.swing.border.LineBorder( new java.awt.Color( 33, 150, 243, 255 ), 3, false )
+					addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "txt_classof_seKeyReleased", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "jButton3"
+					"font": new java.awt.Font( "Times New Roman", 1, 14 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/pharmacy/a7medamer/folder/icons8_Go_Back_30px.png" )
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel5"
+					"font": new java.awt.Font( "Times New Roman", 1, 14 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/pharmacy/a7medamer/folder/icons8_Search_24px.png" )
+					"focusable": false
+					"horizontalTextPosition": 2
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :0:0:p, comp jButton2:1::p::p, space :p:4:p, comp jButton4:1::p::p, space u:::p, comp jButton1:1::p::p, space u:::p, comp jSeparator1:::p:10:p, space u:::p, comp bt_delete_classof:1::p::p, space :::p, comp bt_update_classof:1::p::p, space :::p, comp bt_save_class:1::p:83:p, space :::p, comp bt_new_classof:1::p::p, space :0:0:p}}"
+					"$verticalGroup": "par l {seq {space :0:0:p, par c {comp jButton1:2:c:p::p, comp jButton4:2:c:p::p, comp jButton2:2:c:p::p, comp bt_delete_classof:2:c:p::p, comp bt_update_classof:2:c:p::p, comp bt_save_class:2:c:p::p, comp bt_new_classof:2:c:p::p, comp jSeparator1::c::39:x}, space :0:6:x}}"
+				} ) {
+					name: "jPanel2"
+					"background": new java.awt.Color( 33, 150, 243, 255 )
+					"border": new javax.swing.border.TitledBorder( null, "العمليات المتاحة", 3, 2, new java.awt.Font( "Times New Roman", 1, 14 ), new java.awt.Color( 255, 255, 255, 255 ) )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bt_update_classof"
+						"background": new java.awt.Color( 33, 150, 243, 255 )
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/pharmacy/a7medamer/folder/icons8_Available_Updates_24px.png" )
+						"text": "تعديل"
+						"border": new javax.swing.border.BevelBorder( 0, new java.awt.Color( 144, 202, 249, 255 ), new java.awt.Color( 33, 150, 243, 255 ), new java.awt.Color( 144, 202, 249, 255 ), new java.awt.Color( 33, 150, 243, 255 ) )
+						"horizontalTextPosition": 2
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bt_update_classofActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bt_delete_classof"
+						"background": new java.awt.Color( 33, 150, 243, 255 )
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/pharmacy/a7medamer/folder/icons8_Delete_24px.png" )
+						"text": "حذف"
+						"border": new javax.swing.border.BevelBorder( 0, new java.awt.Color( 144, 202, 249, 255 ), new java.awt.Color( 33, 150, 243, 255 ), new java.awt.Color( 144, 202, 249, 255 ), new java.awt.Color( 33, 150, 243, 255 ) )
+						"horizontalTextPosition": 2
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bt_delete_classofActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bt_save_class"
+						"background": new java.awt.Color( 33, 150, 243, 255 )
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/pharmacy/a7medamer/folder/icons8_Save_24px.png" )
+						"text": "حفظ"
+						"border": new javax.swing.border.BevelBorder( 0, new java.awt.Color( 144, 202, 249, 255 ), new java.awt.Color( 33, 150, 243, 255 ), new java.awt.Color( 144, 202, 249, 255 ), new java.awt.Color( 33, 150, 243, 255 ) )
+						"horizontalTextPosition": 2
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bt_save_classActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "bt_new_classof"
+						"background": new java.awt.Color( 33, 150, 243, 255 )
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/pharmacy/a7medamer/folder/icons8_Add_File_24px.png" )
+						"text": "جديد"
+						"border": new javax.swing.border.BevelBorder( 0, new java.awt.Color( 144, 202, 249, 255 ), new java.awt.Color( 33, 150, 243, 255 ), new java.awt.Color( 144, 202, 249, 255 ), new java.awt.Color( 33, 150, 243, 255 ) )
+						"horizontalTextPosition": 2
+						"preferredSize": new java.awt.Dimension( 59, 34 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bt_new_classofActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jButton1"
+						"background": new java.awt.Color( 33, 150, 243, 255 )
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"text": "عرض الكل"
+						"border": new javax.swing.border.BevelBorder( 0, new java.awt.Color( 144, 202, 249, 255 ), new java.awt.Color( 33, 150, 243, 255 ), new java.awt.Color( 144, 202, 249, 255 ), new java.awt.Color( 33, 150, 243, 255 ) )
+						"horizontalTextPosition": 2
+						"maximumSize": new java.awt.Dimension( 61, 29 )
+						"minimumSize": new java.awt.Dimension( 61, 29 )
+						"preferredSize": new java.awt.Dimension( 61, 29 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton1ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JSeparator" ) {
+						name: "jSeparator1"
+						"orientation": 1
+						"opaque": true
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jButton2"
+						"background": new java.awt.Color( 33, 150, 243, 255 )
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"text": "طباعة"
+						"border": new javax.swing.border.BevelBorder( 0, new java.awt.Color( 144, 202, 249, 255 ), new java.awt.Color( 33, 150, 243, 255 ), new java.awt.Color( 144, 202, 249, 255 ), new java.awt.Color( 33, 150, 243, 255 ) )
+						"horizontalTextPosition": 2
+						"maximumSize": new java.awt.Dimension( 61, 29 )
+						"minimumSize": new java.awt.Dimension( 61, 29 )
+						"preferredSize": new java.awt.Dimension( 61, 29 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton2ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "jButton4"
+						"background": new java.awt.Color( 33, 150, 243, 255 )
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"text": "PDF"
+						"border": new javax.swing.border.BevelBorder( 0, new java.awt.Color( 144, 202, 249, 255 ), new java.awt.Color( 33, 150, 243, 255 ), new java.awt.Color( 144, 202, 249, 255 ), new java.awt.Color( 33, 150, 243, 255 ) )
+						"horizontalTextPosition": 2
+						"maximumSize": new java.awt.Dimension( 61, 29 )
+						"minimumSize": new java.awt.Dimension( 61, 29 )
+						"preferredSize": new java.awt.Dimension( 61, 29 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton4ActionPerformed", true ) )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel1"
+					"font": new java.awt.Font( "Times New Roman", 1, 18 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/pharmacy/a7medamer/folder/icons8_User_Group_Man_Woman_180px.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/pharmacy/a7medamer/folder/icons8_Male_User_24px.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel4"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/pharmacy/a7medamer/folder/icons8_Name_24px.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel13"
+					"font": new java.awt.Font( "Times New Roman", 1, 36 )
+					"foreground": new java.awt.Color( 153, 153, 153, 255 )
+					"text": "بيانات"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel14"
+					"font": new java.awt.Font( "Times New Roman", 1, 36 )
+					"foreground": new java.awt.Color( 153, 153, 153, 255 )
+					"text": "الموردين"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, par l:::p {comp txt_co_addr:::::x, comp txt_co_phone::::250:x, comp txt_co_name::l::250:x, comp jScrollPane1::l:::x}, space u:::p, par l {comp jLabel10::l:p::p, comp jLabel15::l:p::p, comp jLabel9::l:p::p, comp jLabel12::l:p::p}, space :::p}}"
+					"$verticalGroup": "par l {seq l {space :0:0:p, par c {comp jLabel12::c:p::p, comp txt_co_name::c:p::p}, space s:::p, par c {comp txt_co_phone::c:p::p, comp jLabel9::c:p::p}, space s:::p, par c {comp jLabel15::c:p::p, comp txt_co_addr::c:p::p}, space s:::p, par l {comp jScrollPane1:::p:114:p, seq t {comp jLabel10:::p::p, space :p:49:p}}, space :0:0:p}}"
+				} ) {
+					name: "jPanel1"
+					"border": new javax.swing.border.TitledBorder( new javax.swing.border.LineBorder( new java.awt.Color( 255, 255, 255, 255 ), 2, false ), "بيانات الشركة التابع لها", 3, 2, new java.awt.Font( "Times New Roman", 1, 18 ), new java.awt.Color( 255, 255, 255, 255 ) )
+					"opaque": false
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txt_co_name"
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"horizontalAlignment": 4
+						"border": new javax.swing.border.LineBorder( new java.awt.Color( 33, 150, 243, 255 ), 3, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "txt_co_nameActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel12"
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "إسم الشركة"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txt_co_phone"
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"horizontalAlignment": 4
+						"border": new javax.swing.border.LineBorder( new java.awt.Color( 33, 150, 243, 255 ), 3, false )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel9"
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "هاتف الشركة"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel10"
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "ملاحظات"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txt_co_addr"
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"horizontalAlignment": 4
+						"border": new javax.swing.border.LineBorder( new java.awt.Color( 33, 150, 243, 255 ), 3, false )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "jScrollPane1"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "jTextPane1"
+							"border": new javax.swing.border.LineBorder( new java.awt.Color( 33, 150, 243, 255 ), 3, false )
+							"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel15"
+						"font": new java.awt.Font( "Times New Roman", 1, 18 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "عنوان الشركة"
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

@@ -1,0 +1,5 @@
+#Mon Oct 15 02:28:49 EAT 2018
+db_name=S_market_DB
+db_pass=
+Ip_Port=localhost\:3306
+db_user=root
